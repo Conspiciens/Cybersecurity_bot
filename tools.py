@@ -24,7 +24,7 @@ class MyCog(commands.Cog):
                 self.link = final_info[0].a['href']
                 await ctx.send(self.link)
             else:
-                await asyncio.sleep(5)
+                await asyncio.sleep(3600)
 
     async def collect_ctf(self, ctx):
         news = requests.get('https://ctftime.org/event/list/upcoming', headers=headers)
